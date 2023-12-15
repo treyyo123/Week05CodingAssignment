@@ -22,9 +22,9 @@ public class AsteriskLogger implements Logger{
 	public void error(String z) {
 		String message = "***ERROR: " + z + "***";
 		String asterisk = "*";
-		System.out.println(asterisk.repeat(message.length()));
-		System.out.println(message);
-		System.out.println(asterisk.repeat(message.length()));
+		System.out.println(asterisk.repeat(message.length())
+				+ "\n" + message
+				+ "\n" + asterisk.repeat(message.length()));
 	}
 
 }

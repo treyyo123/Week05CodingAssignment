@@ -10,7 +10,7 @@ public class SpacedLogger implements Logger{
 	 * 5. Implement the SpacedLogger methods:
 	 */
 	
-	//4a. If the log method received “Hello” as an argument, it should print H e l l o
+	//5a. If the log method received “Hello” as an argument, it should print H e l l o
 	
 	@Override
 	public void log(String z) {
@@ -21,7 +21,7 @@ public class SpacedLogger implements Logger{
 		System.out.println(split.deleteCharAt(split.length() - 1));
 	}	
 
-	//4b. The error method should do the same, but with “ERROR:” preceding the spaced out input (i.e. ERROR: H e l l o)
+	//5b. The error method should do the same, but with “ERROR:” preceding the spaced out input (i.e. ERROR: H e l l o)
 	@Override
 	public void error(String z) {
 		StringBuilder split = new StringBuilder();
